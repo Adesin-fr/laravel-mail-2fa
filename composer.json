@@ -1,0 +1,60 @@
+{
+    "name": "adesin-fr/laravel-mail-2fa",
+    "version": "1.0.0",
+    "description": "Laravel 2FA package using email OTP codes with InertiaJS support",
+    "keywords": [
+        "laravel",
+        "2fa",
+        "two-factor-authentication",
+        "otp",
+        "email",
+        "inertia",
+        "security"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adesin",
+            "email": "contact@adesin.fr"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/notifications": "^11.0|^12.0",
+        "inertiajs/inertia-laravel": "^1.0|^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdesinFr\\Mail2FA\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdesinFr\\Mail2FA\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdesinFr\\Mail2FA\\Mail2FAServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
