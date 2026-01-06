@@ -1,6 +1,5 @@
 {
     "name": "adesin-fr/laravel-mail-2fa",
-    "version": "1.0.0",
     "description": "Laravel 2FA package using email OTP codes with InertiaJS support",
     "keywords": [
         "laravel",
